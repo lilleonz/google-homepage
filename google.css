@@ -1,3 +1,15 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
 html. body {
 	height: 100%;
 	margin: 0;
@@ -13,6 +25,7 @@ body {
 }
 
 main {
+	min-height: calc(100vh - 91px);
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -39,8 +52,8 @@ main {
 	margin: 20px;
 }
 .searchbar {
-	width: 550px;
-	height: 40px;
+	width: 580px;
+	height: 45px;
 	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.23);
 	background-color: #FFFFFF;
 	border-style: none ;
@@ -85,6 +98,9 @@ a {
 }
 
 .foot {
+	min-width: 675px;
+	max-width: 100%;
+	bottom: 0px;
 	display: inline-grid;
 	grid-auto-flow: row;
 	background-color: #f2f2f2;	
